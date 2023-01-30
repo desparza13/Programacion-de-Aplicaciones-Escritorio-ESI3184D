@@ -1,0 +1,17 @@
+{
+  "name": "tarea2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node .",
+    "styles": "sass src/sass:dist/css",
+    "styles:dev" : "sass src/sass:dist/css --watch --no-source-map"
+  },
+  "author": "Daniela Esparza",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.57.1"
+  }
+}
