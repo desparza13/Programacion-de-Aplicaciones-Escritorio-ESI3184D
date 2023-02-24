@@ -1,0 +1,40 @@
+@import "colores";
+@import "fonts";
+@import "mixins";
+
+html, body{
+    @include noMargin;
+    font-family:serif;
+}
+body{
+    height: 100%;
+    background-color: $color_background;
+}
+main{
+    max-width: 1024px;
+    margin: auto;
+}
+header{
+    @include center;
+    font-family: $header_font;
+    font-size: 25px;
+    display: inline-block;
+    vertical-align:auto;
+    height: 100px;
+    width: 100%;
+    background-color: $color_secondary;
+}
+footer{
+    @extend header;
+    height: 300px;
+}
+section{
+    @include center;
+}
+h2{
+    font-family: $h2_font;
+    color: $color_primary;
+}
+p{
+    font-family: $p_font;
+}

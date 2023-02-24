@@ -1,0 +1,45 @@
+@import "colores";
+@import "mixins";
+
+.detalles{
+    width: 100%;
+    &::after{
+        content:"";
+        display: table;
+        clear: both;
+    }
+    >div{
+        @include center;
+        padding: 30px;
+        height: 350px;
+        float: left;
+        box-sizing: border-box;
+    }
+}
+#detallesQuienSoy > div{
+    width:50%;
+    @include formatoSeccion1;
+    @include mobile{
+        width: 100%;
+    }
+}
+#detallesHobbies > div{
+    width: 25%;
+    @include formatoSeccion1;
+    @include tablet{
+        width: 50%;
+    }
+    @include mobile{
+        width: 100%;
+    }
+}
+#detallesFotos > div{
+    width: 25%;
+    @include formatoSeccion2;
+    @include tablet{
+        width: 50%;
+    }
+    @include mobile{
+        width: 100%;
+    }
+}

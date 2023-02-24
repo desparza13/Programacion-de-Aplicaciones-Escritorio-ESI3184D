@@ -1,0 +1,27 @@
+@mixin noMargin{
+    margin:0;
+    padding:0;
+}
+@mixin center{
+    margin: auto;
+    text-align: center;
+}
+@mixin formatoSeccion1{
+    background-color: $color_background;
+    border: dashed 3px $color_secondary;
+}
+@mixin formatoSeccion2{
+    background-color: $color_secondary;
+    border: dashed 3px $color_background;
+}
+//breakpoints
+@mixin tablet{
+    @media screen and (max-width: 1024px) {
+        @content;
+    }
+}
+@mixin mobile{
+    @media screen and (max-width: 768px){
+        @content;
+    }
+}
