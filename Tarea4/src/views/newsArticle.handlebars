@@ -1,0 +1,16 @@
+<ul>
+{{#each newsArticle}}
+    <div class="newsArticle">
+        <div class="imagen">
+            <img src="{{this.urlToImage}}" alt="Imagen de la noticia {{this.title}}">
+        </div>
+        <div class="detalles">
+            <a href="{{this.url}}" target="_blank"><h2 class="titulo">{{this.title}}</h2></a>
+            <p>Escrito por: <span class="autor">{{this.author}}</span> | <span class="fecha">El {{this.publishedAt}}</p></span>
+            <p class="descripcion">{{this.description}}</p> 
+            <a href="{{this.url}}" target="_blank"><p>Leer más</p></a>
+        </div>
+    </div>
+{{/each}}
+<br>
+</ul>
