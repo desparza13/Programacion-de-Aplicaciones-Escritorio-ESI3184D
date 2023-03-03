@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+  font-family: "Roboto", sans-serif;
+  background-color: #235789;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  padding: 0 20px;
+  color: #ffffff;
+}
+.navbar .tituloPagina {
+  font-size: 48px;
+  font-weight: bold;
+  display: inline-block;
+  margin-right: auto;
+  color: #f2f2f2;
+}
+.navbar .cajaBusqueda {
+  display: inline-block;
+  margin-left: auto;
+  padding: 10px;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px #343a40;
+}
+.navbar .cajaBusqueda input[type=text] {
+  border: none;
+  width: 200px;
+  font-size: 16px;
+  padding: 5px;
+  margin-right: 10px;
+}
+.navbar .cajaBusqueda button {
+  background-color: #6c757d;
+  color: #ffffff;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
