@@ -1,0 +1,59 @@
+.detalles {
+  width: 100%;
+}
+.detalles::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.detalles > div {
+  margin: auto;
+  text-align: center;
+  padding: 30px;
+  height: 350px;
+  float: left;
+  box-sizing: border-box;
+}
+
+#detallesQuienSoy > div {
+  width: 50%;
+  background-color: #f2eac9;
+  border: dashed 3px #dfaf47;
+}
+@media screen and (max-width: 768px) {
+  #detallesQuienSoy > div {
+    width: 100%;
+  }
+}
+
+#detallesHobbies > div {
+  width: 25%;
+  background-color: #f2eac9;
+  border: dashed 3px #dfaf47;
+}
+@media screen and (max-width: 1024px) {
+  #detallesHobbies > div {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #detallesHobbies > div {
+    width: 100%;
+  }
+}
+
+#detallesFotos > div {
+  width: 25%;
+  background-color: #dfaf47;
+  border: dashed 3px #f2eac9;
+}
+@media screen and (max-width: 1024px) {
+  #detallesFotos > div {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #detallesFotos > div {
+    width: 100%;
+  }
+}
