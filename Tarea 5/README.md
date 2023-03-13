@@ -1,5 +1,5 @@
-#CRUD tareas
-###Descripción
+# CRUD tareas
+### Descripción
 CRUD tareas consiste en el desarrollo de una API mediante Node + Express que permita al usuario administrar tareas a través de una base de datos en MongoDB.
 
 Como administrador de tareas, el usuario debe tener la capacidad de crear tareas, listar las tareas existentes, editar una tarea (modificar datos o su status), ver los detalles de una tarea o eliminar una tarea existente. 
