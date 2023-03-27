@@ -1,0 +1,75 @@
+.navBar {
+    background-color: #d04187;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    justify-content: space-between;
+    padding: 1rem;
+    color: white;
+
+    .dany { //logo o nombre
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: right;
+        margin-right: auto;
+        padding: 0 20px;
+    }
+    .danyLink{ //links a partes del portafolio
+        text-decoration: none;
+        color: white;
+        &:hover{
+            color: #ffa600;
+        }
+    }
+
+    .links {
+        //Contenedor de links
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        //enlaces
+        a {
+            color: white;
+            text-decoration: none;
+            margin-right: 1rem;
+
+            &:hover {
+                text-decoration: underline;
+                text-decoration-color: #ffa600;
+                color: #ffa600;
+            }
+        }
+    }
+    //Breakpoints
+    //Ocultar mi nombre en pantallas pequeñas
+    @media (max-width: 599px) {
+        .dany {
+            display: none;
+        }
+        .links {
+            a {
+                padding: 0 10px;
+            }
+        }
+    }
+    @media (min-width: 600px) and (max-width: 899px) {
+        .dany {
+            display: none;
+        }
+        .links {
+            a {
+                padding: 0 15px;
+            }
+        }
+    }
+    @media (min-width: 900px) {
+        .dany {
+            display: block;
+        }
+        .links {
+            a {
+                padding: 0 20px;
+            }
+        }
+    }
+}
