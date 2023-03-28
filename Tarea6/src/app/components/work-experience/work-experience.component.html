@@ -1,1 +1,39 @@
-<p>work-experience works!</p>
+<div class="workExperience">
+  <div class="job">
+    <div class="file">
+      <div class="title" id="company">
+        {{job.company}}
+      </div>
+      <div class="title" id="position">
+        {{job.position}}
+      </div>
+      <div class="title">
+        <div class="filename">
+          {{job.dates}}
+          <i class="fas fa-times"></i>
+        </div>
+      </div>
+      <div class="fileContent">
+        {{job.description}}
+      </div>
+      <hr>
+      <div class="fileContent">
+        <ul>
+          <li *ngFor="let idea of job.ideas">{{idea}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="image">
+    <img src="../../../assets/clouds.png" class="backgroundImage">     
+  </div>
+  <button ng-click="nextJob()">AYUDA</button>
+  <div class="buttons">
+    <button id="btnPrev" (click)="prevJob()">
+      <i class="fas fa-chevron-left"></i>
+    </button>
+    <button id="btnNext" (click)="nextJob()">
+      <i class="fas fa-chevron-right"></i>
+    </button>
+  </div>
+</div>

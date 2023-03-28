@@ -1,0 +1,63 @@
+.education {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 60px - 60px); //altura sin el footer ni el nav
+    align-items: center;
+    background: linear-gradient(to left,
+                                #003f5c 0%,
+                                #444e86 25%,
+                                #955196 50%,
+                                #dd5182 75%,
+                                #ff6e54 100%);
+
+    .uniSection {
+        width: 75%;
+        padding: 20px;
+        height: 100%; //ajustamos la altura al 100%
+    }
+
+    .highschoolSection {
+        width: 25%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        height: 50%; //ajustamos la altura a la mitad del alto total
+
+        .card {
+            background-color: #121212;
+            color: white;
+            border-radius: 30px;
+            padding: 20px;
+            flex-grow: 1;
+
+            h1 {
+                font-size: 3rem;
+                margin-bottom: 10px;
+            }
+
+            h2 {
+                font-size: 2rem;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    #uniCard {
+        height: 60%; //ajustamos la altura al 100%
+        background-color: #121212;
+        color: white;
+        border-radius: 30px;
+        padding: 20px;
+        flex-grow: 1;
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+    }
+}
