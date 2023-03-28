@@ -27,12 +27,11 @@
   <div class="image">
     <img src="../../../assets/clouds.png" class="backgroundImage">     
   </div>
-  <button ng-click="nextJob()">AYUDA</button>
   <div class="buttons">
-    <button id="btnPrev" (click)="prevJob()">
+    <button id="btnPrev" (click)="prevJob()" *ngIf="currentJobIndex!=0">
       <i class="fas fa-chevron-left"></i>
     </button>
-    <button id="btnNext" (click)="nextJob()">
+    <button id="btnNext" (click)="nextJob()" *ngIf="currentJobIndex<jobs.length-1">
       <i class="fas fa-chevron-right"></i>
     </button>
   </div>

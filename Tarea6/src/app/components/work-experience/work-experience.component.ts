@@ -23,18 +23,14 @@ export class WorkExperienceComponent {
   ]
   job:Job=this.jobs[1];
   currentJobIndex:number=0;
-  prevJob(): void {
-    if (this.currentJobIndex!=0){
-      this.currentJobIndex--;
-    }
-    console.log(this.currentJobIndex);
+  prevJob(){
+    this.currentJobIndex--;
+    this.job = this.jobs[this.currentJobIndex];
   }
 
-  nextJob(): void {
-    if (this.currentJobIndex<this.jobs.length-1){
-      this.currentJobIndex++;
-    }
-    console.log(this.currentJobIndex);
+  nextJob(){
+    this.currentJobIndex++;
+    this.job = this.jobs[this.currentJobIndex];
   }
   constructor(){
     this.jobs = [
