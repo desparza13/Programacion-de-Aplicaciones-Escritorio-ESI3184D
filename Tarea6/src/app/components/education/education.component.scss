@@ -1,0 +1,64 @@
+.education {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 60px - 60px);
+    align-items: center;
+    background: linear-gradient(to left,
+                                #003f5c 0%,
+                                #444e86 25%,
+                                #955196 50%,
+                                #dd5182 75%,
+                                #ff6e54 100%
+    );
+
+    .uniSection {
+        width: 75%;
+        padding: 20px;
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .logo {
+        z-index: 2;
+        width: 25%;
+        padding: 20px;
+        display: flex;
+        height: 50%;
+        img{
+            max-width: 100%;
+            object-fit: contain;
+        }
+    }
+
+    #uniCard {
+        z-index: 2;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 1); //añadimos sombra para dar profundidad
+        text-align: center;
+        
+        h1 {
+            font-size: 5rem;
+            color:#955196
+        }
+
+        h2 {
+            font-size: 2rem;
+            padding-bottom: 20px;
+            color:#ce90ce
+        }
+        h3{
+            font-size: 1.5rem;
+            padding: 20px;
+        }
+    }
+    .wave{
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        z-index: 1; //por detrás
+    }
+}

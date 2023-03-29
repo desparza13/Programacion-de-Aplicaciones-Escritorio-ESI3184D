@@ -1,0 +1,58 @@
+.personalInfo{
+    height: calc(100vh - 60px - 60px); //altura sin el footer ni el nav
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to left,
+                                #003f5c 0%,
+                                #444e86 25%,
+                                #955196 50%,
+                                #dd5182 75%,
+                                #ff6e54 100%);
+    .backgroundImage{
+        height: calc(100vh - 60px - 60px); //altura sin el footer ni el nav
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0px;
+        z-index: 1;
+    }
+    .file{
+        width:80%;
+        max-width: 700px;
+        margin: 0 auto;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 1); //añadimos sombra para dar profundidad
+
+        position: relative;
+        z-index:2;
+        .title{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ffa600;
+            color: black;
+            font-size: 24px;
+            font-weight: bold;
+            padding: 10px;
+            .filename{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex: 1;
+                text-align: center;
+                i{
+                    margin-left: auto;
+                    cursor: pointer;
+                }
+            }
+        }
+        .fileContent{
+            padding: 10px;
+            font-size: 16px;
+            min-height: 150px;
+        }
+    }
+
+}

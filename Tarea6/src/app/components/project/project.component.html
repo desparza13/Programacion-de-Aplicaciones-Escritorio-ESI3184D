@@ -1,0 +1,40 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+<div class="projectComponent">
+    <div class="project">
+        <div class="file">
+            <div class="name title">
+                {{project.name}}
+            </div>
+            <div class="title">
+                <div class="filename date">
+                    {{project.date}}
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            <div class="fileContent">
+                {{project.description}}
+                <ul>
+                    <li *ngFor="let idea of project.ideas">{{idea}}</li>
+                </ul>
+                <div class="github">
+                    <a href="{{project.github}}" target="_blank">See more</a>
+                </div>
+            </div>
+            <hr>
+            <div class="fileContent languages">
+                    <i class="icons" *ngFor="let language of project.languages" class="{{language}}"></i>
+            </div>
+        </div>
+    </div>
+    <div class="image">
+        <img src="../../../assets/clouds.png" class="backgroundImage">     
+    </div>
+    <div class="buttons">
+        <button id="btnPrev" (click)="prevProject()" *ngIf="currentProjectIndex!=0">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button id="btnNext" (click)="nextProject()" *ngIf="currentProjectIndex<projects.length-1">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+    </div>
+</div>
