@@ -21,6 +21,7 @@
     }
 
     .logo {
+        z-index: 2;
         width: 25%;
         padding: 20px;
         display: flex;
@@ -32,6 +33,7 @@
     }
 
     #uniCard {
+        z-index: 2;
         background-color: white;
         border-radius: 10px;
         box-shadow: 0 0 20px rgba(0, 0, 0, 1); //añadimos sombra para dar profundidad
@@ -51,5 +53,12 @@
             font-size: 1.5rem;
             padding: 20px;
         }
+    }
+    .wave{
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        z-index: 1; //por detrás
     }
 }

@@ -1,8 +1,5 @@
 import { Component } from '@angular/core';
 
-interface BulletPoints{
-  description: string;
-}
 interface Job {
   index: number;
   company: string;
@@ -21,7 +18,7 @@ interface Job {
 export class WorkExperienceComponent {
   jobs: Job[] = [
   ]
-  job:Job=this.jobs[1];
+  job:Job=this.jobs[0];
   currentJobIndex:number=0;
   prevJob(){
     this.currentJobIndex--;
